@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style.css">
+    <title>Form Traveller</title>
+
+
+</head>
+
+<body>
+    <div class="formularioDicas">
+
+        <fieldset>
+            <legend>Dados pessoais:</legend>
+            <p>
+                <label for="nome"> Qual seu nome completo? </label>
+                <input type="text" id="nome" required>
+            </p>
+
+            <p>
+                <label for="email"> Qual seu e-mail de cadastro? </label>
+                <input type="email" id="email" required>
+            </p>
+
+            <p>
+                <label for="cidade"> Qual cidade você mora? </label>
+                <input type="city" id="cidade">
+            </p>
+        </fieldset>
+
+        <fieldset>
+            <legend>Sobre sua viagem:</legend>
+            <p>
+                <label for="destino"> Para onde você foi? </label>
+                <input type="text" id="destino" required>
+            </p>
+
+            <p>
+                <label for="entrada"> Quais datas você esteve nesse local? </label>
+                <input type="date" id="entrada" required>
+                <label for="saída"> à </label>
+                <input type="date" id="saída" required>
+            </p>
+
+            <p>
+                <label for="passeio"> Conte sobre o passeio que você mais gostou: </label> <br>
+                <textarea id="passeio"></textarea>
+            </p>
+            <p>
+                <label for="passeioImagens">Coloque aqui fotos marcantes do passeio</label> <br>
+                <input type="file" id="passeioImagens">
+            </p>
+
+            <p>
+                <label for="restaurante"> Qual restaurante local você recomenda e o que comeu lá? </label>
+                <input type="text" id="restaurante">
+            </p>
+            <p>
+                <label for="restauranteImagens">Coloque aqui fotos do local e comida.</label> <br>
+                <input type="file" id="restauranteImagens">
+            </p>
+            
+
+            <p>
+                <label for="naoFaria"> O que você não faria novamente? </label>
+                <input type="text" id="naoFaria">
+            </p>
+
+            <p>
+                <label for="pontoTuristico"> Fale uma vista que vale à pena: </label>
+                <input type="text" id="pontoTuristico">
+            </p>
+
+            <p>
+                <label for="gasto"> Ao total, quanto gastou nessa viagem? </label>
+                <input type="number" id="gasto" required>
+            </p>
+
+            <p>
+                <label for="estrelas"> Em uma escala de 1 à 5, quantas estrelas você daria ao destino que conheceu?
+                </label>
+                <input type="range" id="estrelas" min="1" max="5" required>
+            </p>
+        </fieldset>
+    </div>
+
+    <div class="button">
+        <p> <button type="submit">Enviar minha dica!</button>
+        </p>
+    </div>
+
+</body>
+
+</html>
